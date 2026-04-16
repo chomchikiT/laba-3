@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Учёт консультаций</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">📋 Учёт консультаций</h1>
+      <p class="header__subtitle">Информационная система управления консультациями</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <div class="controls__buttons">
+        <button id="btnAll" class="btn btn--primary">Показать все</button>
+        <button id="btnNew" class="btn btn--success">Показать NEW</button>
+        <button id="btnSort" class="btn btn--secondary">Сортировать по стоимости ↓</button>
+        <button id="btnStats" class="btn btn--info">Показать статистику</button>
+      </div>
+    </section>
+
+    <div id="message" class="message"></div>
+
+    <section>
+      <h2 class="section-title">Список консультаций</h2>
+      <div id="list" class="list"></div>
+    </section>
+
+    <section class="demo-section">
+      <h2 class="section-title">Задача F1 — DOM элемент</h2>
+      <div id="message-demo" class="demo-block"></div>
+    </section>
+
+    <section class="demo-section">
+      <h2 class="section-title">Задача F2 — Список параграфов</h2>
+      <div id="demoList" class="demo-block"></div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="logic.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
